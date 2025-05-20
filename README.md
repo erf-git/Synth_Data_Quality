@@ -1,5 +1,5 @@
 # Synth_Data_Quality
-Objective: create a novel metric to evaulate synthetic data quality for REU located at Lehigh University. 
+Objective: create a novel metric to evaulate synthetic data quality for 2024 REU located at Lehigh University. 
 
 Libraries:
 pip install matplotlib networkx numpy pandas torch tensorflow scikit-learn scipy wget nose sdv DataSynthesizer py-synthpop dp-cgans
