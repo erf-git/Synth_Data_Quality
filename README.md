@@ -4,7 +4,7 @@ Objective: create a novel metric to evaulate synthetic data quality for REU loca
 Libraries:
 pip install matplotlib networkx numpy pandas torch tensorflow scikit-learn scipy wget nose sdv DataSynthesizer py-synthpop dp-cgans
 
-Data Sources
+Data Sources (unzip the data_compressed.zip and put them in a "data" folder)
 Adult: https://archive.ics.uci.edu/dataset/2/adult
 Bank Marketing: https://archive.ics.uci.edu/dataset/222/bank+marketing
 Breast Cancer: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
