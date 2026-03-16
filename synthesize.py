@@ -16,12 +16,14 @@ from DataSynthesizer.DataDescriber import DataDescriber
 from DataSynthesizer.DataGenerator import DataGenerator
 
 
-PATH = "/home/erf6575/Desktop/SynthData/data/"
+# PATH = "/home/erf6575/Desktop/SynthData/data/"
+PATH = os.getcwd() + "/data/"
 
 #################### DATA ####################
 
 print("Checking files...")
 
+# Dictionary with file name and original dataset location
 files = {
     "adult": PATH + "adult_original.csv",
     "bank": PATH + "bank_original.csv",
@@ -35,7 +37,7 @@ files = {
     "titanic": PATH + "titanic_original.csv"
 }
 
-
+# Commandline check for files
 for name, file in files.items():
     if os.path.isfile(file):
         print("Located ", file)
@@ -79,7 +81,7 @@ def SDV(name, dataset, num_generate):
         gc_data.to_csv(PATH + f"{name}_gc.csv", index=False)
         print("Complete")
     except Exception as e:
-        print("Error running GaussianCopulaSynthesizer\n" + e)
+        print("Error running GaussianCopulaSynthesizer\n", e)
 
     # CTGAN
     try:
@@ -91,7 +93,7 @@ def SDV(name, dataset, num_generate):
         ctgan_data.to_csv(PATH + f"{name}_ctgan.csv", index=False)
         print("Complete")
     except Exception as e:
-        print("Error running CTGANSynthesizer\n" + e)
+        print("Error running CTGANSynthesizer\n", e)
 
 
 # Synthcity
@@ -106,7 +108,7 @@ def Synthcity(name, dataset, num_generate):
         pate_data.dataframe().to_csv(PATH + f"{name}_pate.csv", index=False)
         print("Complete")
     except Exception as e:
-        print("Error running PATE-GAN\n" + e)
+        print("Error running PATE-GAN\n", e)
     
     # # DP-GAN
     # try:
@@ -168,8 +170,8 @@ def DataSynthesizer(name, dataset, num_generate):
         print("Error running PrivBayes\n"+ e)
 
 
-# {"dermatology": PATH + "dermatology.csv"}.items()
-for name, file in {"depression": PATH + "depression_original.csv"}.items():
+# files.items()
+for name, file in files.items():
     
     # Synthcity has trouble with NaN values
     dataset = pd.read_csv(file, na_filter=False)

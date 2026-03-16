@@ -1,0 +1,17 @@
+sdv 
+synthcity
+DataSynthesizer 
+py-synthpop 
+dp-cgans
+matplotlib 
+networkx 
+numpy 
+pandas 
+torch>=2.3.0
+torchvision 
+tensorflow 
+scikit-learn<1.2.0
+scipy>=1.10,<1.14 
+seaborn
+wget 
+nose
