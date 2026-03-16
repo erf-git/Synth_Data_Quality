@@ -22,12 +22,11 @@ Idea:
 - The decision trees are collected and transformed into a graph based on the stem-leaf connections between features
 - Graph edit distance between original and sythetic output graphs determine data utility
 
- Outcome:
- - Open for interpretation on how accurately this metric determines synthetic data quality
- - 3 data synthesizers are utilitized
- - Multiple tree-based models are explored using scikit-learn library
- - Numerous datasets from UCI are employed
+Outcome:
+- GED and proposed GED score tends to agree with accuracy, f1, and roc auc scores. (eg. measurement of model on orginial data vs synthezied data are similar)
+- Relatively useless for comparing data synethesizers.
 
 Areas for Improvement:
-- Interpreation of results
-- This method does not scale well above 50 feature datasets
+- Synthesized data generators produce equally complex decision trees regardless of data synthesization method.
+- This method does not scale well above 50 feature datasets.
+
