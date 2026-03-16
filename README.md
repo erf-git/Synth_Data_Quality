@@ -1,5 +1,6 @@
 # Synth_Data_Quality
 Objective: create a novel metric to evaulate synthetic data quality for 2024 REU located at Lehigh University. 
+Presentation: Graph Edit Metric (Lehigh REU) - Ethan Feldman.pdf
 
 Data Sources (unzip the data_compressed.zip and put them in a "data" folder)
 Adult: https://archive.ics.uci.edu/dataset/2/adult,
