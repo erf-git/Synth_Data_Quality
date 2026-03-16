@@ -1,8 +1,6 @@
 # Synth_Data_Quality
 Objective: create a novel metric to evaulate synthetic data quality for 2024 REU located at Lehigh University. 
 
-Create a "scores" folder.
-
 Data Sources (unzip the data_compressed.zip and put them in a "data" folder)
 Adult: https://archive.ics.uci.edu/dataset/2/adult,
 Bank Marketing: https://archive.ics.uci.edu/dataset/222/bank+marketing,
@@ -30,3 +28,5 @@ Areas for Improvement:
 - Synthesized data generators produce equally complex decision trees regardless of data synthesization method.
 - This method does not scale well above 50 feature datasets.
 
+Execution:
+- Data synthesizer libraries may be out of date! 
